@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
+import About from "./components/About";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import backgroundImage from "./assets/drone.jpg";
 
 function App() {
+  const imageUrl = `url(${backgroundImage})`;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-primary scrollbar-track-background-secondary"
+      style={{ scrollbarColor: "var(--primary) var(--secondary)" }}
+    >
+      <div
+        className="h-screen bg-no-repeat bg-center bg-cover"
+        style={{
+          backgroundImage: imageUrl,
+          backgroundColor: "black",
+        }}
+      >
+        <Navbar />
+        <Intro />
+        <About />
+        <Services />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
