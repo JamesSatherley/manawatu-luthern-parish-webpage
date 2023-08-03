@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-background p-10 h-2/5 text-text flex flex-col justify-center items-center">
+    <div
+      id="contact"
+      className="bg-background p-10 h-2/5 text-text flex flex-col justify-center items-center"
+    >
       <span className="text-5xl pb-28">Contact Us</span>
       <div className="flex flex-row">
         <div className="flex flex-col">

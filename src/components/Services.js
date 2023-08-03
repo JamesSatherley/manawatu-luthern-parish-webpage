@@ -2,7 +2,10 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="bg-primary p-10 h-1/2 text-background flex flex-col justify-center items-center">
+    <div
+      id="services"
+      className="bg-primary p-10 h-1/2 text-background flex flex-col justify-center items-center"
+    >
       <span className="text-5xl pb-28">Services</span>
       <div className="flex flex-row space-x-96">
         <div className="flex flex-col">
